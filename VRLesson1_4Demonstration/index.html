@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box wireframe=true position="0 1 0" width="4" height="4" depth="4">
+        <a-sphere src="spiderskin2.jpg"></a-sphere>
+        <a-box wireframe=true position="-1 0 -0.25" rotation="0 -30 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="-1 0 0.25" rotation="0 30 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="1 0 0.25" rotation="0 -210 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="1 0 -0.25" rotation="0 210 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+      </a-box>
+
+
+      <a-box wireframe=true position="-10 1 0" width="4" height="4" depth="4" rotation="0 45 0">
+        <a-sphere src="spiderskin2.jpg"></a-sphere>
+        <a-box wireframe=true position="-1 0 -0.25" rotation="0 -30 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="-1 0 0.25" rotation="0 30 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="1 0 0.25" rotation="0 -210 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+        <a-box wireframe=true position="1 0 -0.25" rotation="0 210 0">
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 45" ></a-cylinder>
+          <a-cylinder src="spiderskin2.jpg" radius="0.2" height="2" rotation="0 0 -45"position="-1.2 0 0" ></a-cylinder>
+        </a-box>
+      </a-box>
+
+    
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" src="cave1.jpg" repeat="5 5"></a-plane> 
+      <a-sky src="web.png" repeat="10 10"></a-sky>
+      <a-camera position="0 1.3 5"></a-camera>
+    </a-scene>
+  </body>
+</html>
