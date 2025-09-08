@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 -0 -4" rotation="-90 0 0" width="80" height="80" color="brown"></a-plane>
+      <a-sky color="rgb(200,200,255)"></a-sky>
+      <a-camera>
+        <a-cursor>
+          <a-text id="text1" position="-0.75 1 -2"></a-text>
+          <a-text id="text2" position="-0.74 0.99 -2.01" color="black"></a-text>
+        </a-cursor>
+      </a-camera>
+    </a-scene>
+
+    <script src="script.js"></script>
+  </body>
+</html>
