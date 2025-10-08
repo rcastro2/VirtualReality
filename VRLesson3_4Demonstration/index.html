@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="ball.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera> 
+        <a-cursor>
+          <a-text id="time" position="-1 1 -1" value="Time: " color="black"></a-text>
+        </a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
