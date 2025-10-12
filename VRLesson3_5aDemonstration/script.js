@@ -3,7 +3,6 @@ let scene, camera, target, ball;
 
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
-  camera = document.querySelector("a-camera");
   target = document.querySelector("#target");
   ball = document.querySelector("#ball");
   ball.x = -1;
@@ -17,14 +16,10 @@ function loop(){
   ball.x += ball.dx;
   ball.object3D.position.x = ball.x
   let d1 = distance(ball, target);
-  let d2 = distance(camera, target);
   output.setAttribute("value",`d1= ${d1}\nd2=${d2}`);
 
   if(d1 < 1){
     ball.dx = -ball.dx;
-  }
-  if(d2 < 1){
-    target.setAttribute("opacity",0)
   }
   window.requestAnimationFrame(loop);
 }
