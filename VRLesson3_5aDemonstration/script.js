@@ -16,7 +16,7 @@ function loop(){
   ball.x += ball.dx;
   ball.object3D.position.x = ball.x
   let d1 = distance(ball, target);
-  output.setAttribute("value",`d1= ${d1}\nd2=${d2}`);
+  output.setAttribute("value",`d1= ${d1}`);
 
   if(d1 < 1){
     ball.dx = -ball.dx;
