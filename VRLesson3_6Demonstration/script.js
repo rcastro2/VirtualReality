@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded",function() {
     console.log("hi");
     let x = camera.object3D.position.x;
     let z = camera.object3D.position.z;
-    new Box(x,1,z);
+    new Component(x,1,z,"box");
   })
   
   window.addEventListener("keydown",function(e){
@@ -17,9 +17,9 @@ window.addEventListener("DOMContentLoaded",function() {
     let x = camera.object3D.position.x;
     let z = camera.object3D.position.z;
     if(e.key == "1"){
-      new Sphere(x,1,z);
+      new Component(x,1,z,"sphere");
     }else if(e.key == "2"){
-      new Cone(x,1,z);
+      new Component(x,1,z,"cone");
     }
   })
   
