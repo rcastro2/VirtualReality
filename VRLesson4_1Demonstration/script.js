@@ -14,9 +14,8 @@ window.addEventListener("DOMContentLoaded",function() {
     person.addEventListener("click",function(){
       this.setAttribute("scale","0 0 0");
     })
+    people.push(person);
     scene.append(person);
-    
-    people.push(person)
   }
   
   loop();
