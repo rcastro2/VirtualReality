@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <a-scene light="defaultLightsEnabled: false">
+      <a-entity light="type: ambient; intensity:0.2"></a-entity>
+      <a-box id="light_source">
+          <a-sphere position="0 8 0" color="yellow" light="type:directional;castShadow:true;intensity:0.8"></a-sphere>
+      </a-box>
+
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow="receive: true" ></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow="receive: true"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow="receive: true"></a-cylinder> 
+      <a-cone id="lamp" radius-bottom="0.2" position="0 3 0" color="yellow" light="type:point;castShadow:true;intensity:0;"></a-cone>  
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="15" color="#7BC8A4" shadow="receive: true"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-camera position="0 1.6 5">
+        <a-cursor/>      
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
