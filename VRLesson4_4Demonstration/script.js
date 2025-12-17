@@ -6,14 +6,14 @@ window.addEventListener("DOMContentLoaded",function() {
   dog = document.querySelector("#dog");
   camera = document.querySelector("a-camera");
   car.onclick = function(){
-    this.components.sound.playSound();
+    car.components.sound.playSound();
   }
   for(let i = 0; i < 20; i++){
     let x = rnd(-10,10);
     let z = rnd(-10,10);
     balls.push(new Ball(x,z));
   }
-  setTimeout(loop,100);
+  setTimeout(loop,1000);
 })
 
 function loop(){
